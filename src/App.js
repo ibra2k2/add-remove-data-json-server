@@ -66,8 +66,8 @@ function App() {
     setNewNote(event.target.value);
   }
   const removeNoteOf = (id) => {
-    const deleteNote = setNotes(notes.filter(note => note.id !== id));
-    console.log('Deleted Note', deleteNote);
+    setNotes(notes.filter(note => note.id !== id));
+    console.log('Deleted Note:', id);
     
   } 
 
